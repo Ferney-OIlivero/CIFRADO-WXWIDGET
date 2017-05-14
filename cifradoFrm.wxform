@@ -1,0 +1,1000 @@
+object frmNewForm: TfrmNewForm
+  Left = 8
+  Top = 8
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'cifrado'
+  ClientHeight = 496
+  ClientWidth = 614
+  Color = clAppWorkSpace
+  OldCreateOrder = True
+  PopupMenu = DesignerPopup.Owner
+  Visible = True
+  OnClick = FormClick
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'cifradoFrm'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxFrame'
+  Wx_Center = True
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  Wx_DesignerType = dtWxFrame
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  isAuimanagerAvailable = False
+  PixelsPerInch = 96
+  TextHeight = 15
+  object WxPanel1: TWxPanel
+    Left = 0
+    Top = 0
+    Width = 617
+    Height = 496
+    Color = clSkyBlue
+    TabOrder = 0
+    Wx_BKColor = clBlack
+    Wx_Class = 'wxPanel'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_WXPANEL1'
+    Wx_IDValue = 1001
+    InvisibleBGColorString = 'STD:SKY BLUE'
+    Wx_PaneCaption = 'WxPanel1'
+    Wx_PaneName = 'WxPanel1_Pane'
+    Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+    Wx_Aui_Dockable_Direction = []
+    Wx_Aui_Pane_Style = []
+    Wx_Aui_Pane_Buttons = []
+    Wx_BestSize_Height = 0
+    Wx_BestSize_Width = 0
+    Wx_MinSize_Height = 0
+    Wx_MinSize_Width = 0
+    Wx_MaxSize_Height = 0
+    Wx_MaxSize_Width = 0
+    Wx_Floating_Height = 0
+    Wx_Floating_Width = 0
+    Wx_Floating_X_Pos = 0
+    Wx_Floating_Y_Pos = 0
+    object WxStaticText1: TWxStaticText
+      Left = 191
+      Top = 0
+      Width = 254
+      Height = 56
+      Caption = 'Cifrado de Cesar'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -32
+      Font.Name = 'Viner Hand ITC'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      Wx_BGColor = clBlack
+      Wx_Class = 'wxStaticText'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = False
+      Wx_IDName = 'ID_WXSTATICTEXT1'
+      Wx_IDValue = 1044
+      Wx_LabelStyle = []
+      InvisibleFGColorString = 'CUS:255,255,255'
+      Wx_PaneCaption = 'WxStaticText1'
+      Wx_PaneName = 'WxStaticText1_Pane'
+      Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+      Wx_Aui_Dockable_Direction = []
+      Wx_Aui_Pane_Style = []
+      Wx_Aui_Pane_Buttons = []
+      Wx_BestSize_Height = 0
+      Wx_BestSize_Width = 0
+      Wx_MinSize_Height = 0
+      Wx_MinSize_Width = 0
+      Wx_MaxSize_Height = 0
+      Wx_MaxSize_Width = 0
+      Wx_Floating_Height = 0
+      Wx_Floating_Width = 0
+      Wx_Floating_X_Pos = 0
+      Wx_Floating_Y_Pos = 0
+    end
+    object WxRichTextCtrl1: TWxRichTextCtrl
+      Left = 6
+      Top = 53
+      Width = 604
+      Height = 416
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      Color = clSkyBlue
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Arial Narrow'
+      Font.Style = [fsBold, fsItalic]
+      Lines.Strings = (
+        
+          '      El cifrado C'#233'sar es uno de los primeros m'#233'todos de cifrado' +
+          ' conocidos'
+        
+          ' hist'#243'ricamente. Consiste en escribir un mensaje que esta formad' +
+          'o por las'
+        
+          ' letras del alfabeto latino normal, luego todo este mensaje sera' +
+          ' codificado'
+        
+          ' desplazando la posicion de cada letra con respecto al numero de' +
+          '  cifrado'
+        ' que se le asigne.'
+        ''
+        ''
+        ''
+        ' SELECCIONE:   ARCHIVO / NUEVO  (Para Comenzar) o bien'
+        ''
+        
+          ' SELECCIONE:   ARCHIVO / ABRIR (Archivo Codificado o Archivo Cod' +
+          'ificado)'
+        ' '
+        ''
+        ''
+        ''
+        ' Olivero Ferney'
+        ''
+        ' Sarria Anderson')
+      ParentFont = False
+      TabOrder = 2
+      Wx_BGColor = clBlack
+      Wx_Class = 'wxRichTextCtrl'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_RichTextStyle = []
+      Wx_Enabled = False
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_IDName = 'ID_WXRICHTEXTCTRL1'
+      Wx_IDValue = 1056
+      Wx_MaxLength = 0
+      InvisibleBGColorString = 'STD:SKY BLUE'
+      InvisibleFGColorString = 'CUS:255,255,255'
+      Wx_PaneCaption = 'WxRichTextCtrl1'
+      Wx_PaneName = 'WxRichTextCtrl1_Pane'
+      Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+      Wx_Aui_Dockable_Direction = []
+      Wx_Aui_Pane_Style = []
+      Wx_Aui_Pane_Buttons = []
+      Wx_BestSize_Height = 0
+      Wx_BestSize_Width = 0
+      Wx_MinSize_Height = 0
+      Wx_MinSize_Width = 0
+      Wx_MaxSize_Height = 0
+      Wx_MaxSize_Width = 0
+      Wx_Floating_Height = 0
+      Wx_Floating_Width = 0
+      Wx_Floating_X_Pos = 0
+      Wx_Floating_Y_Pos = 0
+    end
+    object WxPanel3: TWxPanel
+      Left = 12
+      Top = 267
+      Width = 589
+      Height = 209
+      Color = 7051558
+      TabOrder = 0
+      Wx_BKColor = clBlack
+      Wx_Class = 'wxPanel'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_Default = False
+      Wx_EventList.Strings = (
+        'EVT_UPDATE_UI:OnUpdateUI')
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = True
+      Wx_IDName = 'ID_WXPANEL3'
+      Wx_IDValue = 1020
+      Wx_Border = 10
+      InvisibleBGColorString = 'CUS:38,153,107'
+      Wx_PaneCaption = 'WxPanel2'
+      Wx_PaneName = 'WxPanel2_Pane'
+      Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+      Wx_Aui_Dockable_Direction = []
+      Wx_Aui_Pane_Style = []
+      Wx_Aui_Pane_Buttons = []
+      Wx_BestSize_Height = 0
+      Wx_BestSize_Width = 0
+      Wx_MinSize_Height = 0
+      Wx_MinSize_Width = 0
+      Wx_MaxSize_Height = 0
+      Wx_MaxSize_Width = 0
+      Wx_Floating_Height = 0
+      Wx_Floating_Width = 0
+      Wx_Floating_X_Pos = 0
+      Wx_Floating_Y_Pos = 0
+      object inserttextocod: TWxMemo
+        Left = 20
+        Top = 58
+        Width = 560
+        Height = 144
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        TabOrder = 0
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxTextCtrl'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_EditStyle = [wxTE_MULTILINE]
+        Wx_Enabled = False
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_IDName = 'ID_WXMEMO1'
+        Wx_IDValue = 1016
+        Wx_MaxLength = 0
+        Wx_PaneCaption = 'WxMemo2'
+        Wx_PaneName = 'WxMemo1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxStaticText5: TWxStaticText
+        Left = 194
+        Top = 4
+        Width = 212
+        Height = 32
+        Caption = 'Texto Codificado'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -24
+        Font.Name = 'Century Schoolbook'
+        Font.Style = [fsBold, fsItalic]
+        ParentFont = False
+        TabOrder = 1
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxStaticText'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXSTATICTEXT3'
+        Wx_IDValue = 1017
+        Wx_LabelStyle = []
+        InvisibleFGColorString = 'CUS:255,255,255'
+        Wx_PaneCaption = 'WxStaticText1'
+        Wx_PaneName = 'WxStaticText1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxButtonDecodificar: TWxButton
+        Left = 485
+        Top = 17
+        Width = 92
+        Height = 25
+        Caption = 'DECODIFICAR'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Century Schoolbook'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        EVT_BUTTON = 'WxButtonDecodificarClick'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_Enabled = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXBUTTON2'
+        Wx_IDValue = 1019
+        Wx_PaneCaption = 'WxButton2'
+        Wx_PaneName = 'WxButton2_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxStaticText4: TWxStaticText
+        Left = 8
+        Top = 30
+        Width = 113
+        Height = 27
+        Caption = 'N'#176' Cifrado:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Century Schoolbook'
+        Font.Style = [fsBold, fsItalic]
+        ParentFont = False
+        TabOrder = 3
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxStaticText'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXSTATICTEXT4'
+        Wx_IDValue = 1026
+        Wx_LabelStyle = []
+        InvisibleFGColorString = 'CUS:255,255,255'
+        Wx_PaneCaption = 'WxStaticText4'
+        Wx_PaneName = 'WxStaticText4_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object insertnum: TWxEdit
+        Left = 118
+        Top = 34
+        Width = 69
+        Height = 19
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        AutoSize = False
+        TabOrder = 4
+        EVT_TEXT = 'insertnumUpdated'
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxTextCtrl'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_EditStyle = []
+        Wx_Enabled = False
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_INSERTNUM'
+        Wx_IDValue = 1027
+        Wx_Validator = 'wxTextValidator(wxFILTER_NUMERIC, NULL)'
+        Wx_MaxLength = 0
+        Wx_PaneCaption = 'WxEdit1'
+        Wx_PaneName = 'WxEdit1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxCheckBox2: TWxCheckBox
+        Left = 8
+        Top = 8
+        Width = 52
+        Height = 17
+        Caption = 'Select'
+        TabOrder = 5
+        EVT_CHECKBOX = 'WxCheckBox2Click'
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXCHECKBOX2'
+        Wx_IDValue = 1037
+        Wx_PaneCaption = 'WxCheckBox2'
+        Wx_PaneName = 'WxCheckBox2_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+    end
+    object WxPanel2: TWxPanel
+      Left = 12
+      Top = 53
+      Width = 589
+      Height = 209
+      Color = 7052323
+      TabOrder = 3
+      Wx_BKColor = clBlack
+      Wx_Class = 'wxPanel'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_Default = False
+      Wx_EventList.Strings = (
+        'EVT_UPDATE_UI:OnUpdateUI')
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = True
+      Wx_IDName = 'ID_WXPANEL2'
+      Wx_IDValue = 1057
+      Wx_Border = 10
+      InvisibleBGColorString = 'CUS:35,156,107'
+      Wx_PaneCaption = 'WxPanel2'
+      Wx_PaneName = 'WxPanel2_Pane'
+      Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+      Wx_Aui_Dockable_Direction = []
+      Wx_Aui_Pane_Style = []
+      Wx_Aui_Pane_Buttons = []
+      Wx_BestSize_Height = 0
+      Wx_BestSize_Width = 0
+      Wx_MinSize_Height = 0
+      Wx_MinSize_Width = 0
+      Wx_MaxSize_Height = 0
+      Wx_MaxSize_Width = 0
+      Wx_Floating_Height = 0
+      Wx_Floating_Width = 0
+      Wx_Floating_X_Pos = 0
+      Wx_Floating_Y_Pos = 0
+      object inserttextodec: TWxMemo
+        Left = 20
+        Top = 58
+        Width = 560
+        Height = 144
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        TabOrder = 0
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxTextCtrl'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_EditStyle = [wxTE_MULTILINE]
+        Wx_Enabled = False
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_IDName = 'ID_WXMEMO1'
+        Wx_IDValue = 1016
+        Wx_MaxLength = 0
+        Wx_PaneCaption = 'WxMemo2'
+        Wx_PaneName = 'WxMemo1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxStaticText7: TWxStaticText
+        Left = 184
+        Top = 4
+        Width = 239
+        Height = 32
+        Caption = 'Texto Decodificado'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -24
+        Font.Name = 'Century Schoolbook'
+        Font.Style = [fsBold, fsItalic]
+        ParentFont = False
+        TabOrder = 1
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxStaticText'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXSTATICTEXT3'
+        Wx_IDValue = 1017
+        Wx_LabelStyle = []
+        InvisibleFGColorString = 'CUS:255,255,255'
+        Wx_PaneCaption = 'WxStaticText1'
+        Wx_PaneName = 'WxStaticText1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxStaticText8: TWxStaticText
+        Left = 8
+        Top = 30
+        Width = 113
+        Height = 27
+        Caption = 'N'#176' Cifrado:'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Century Schoolbook'
+        Font.Style = [fsBold, fsItalic]
+        ParentFont = False
+        TabOrder = 2
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxStaticText'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXSTATICTEXT4'
+        Wx_IDValue = 1026
+        Wx_LabelStyle = []
+        InvisibleFGColorString = 'CUS:255,255,255'
+        Wx_PaneCaption = 'WxStaticText4'
+        Wx_PaneName = 'WxStaticText4_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxCheckBox1: TWxCheckBox
+        Left = 8
+        Top = 6
+        Width = 48
+        Height = 17
+        Caption = 'Select'
+        TabOrder = 3
+        EVT_CHECKBOX = 'WxCheckBox1Click0'
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXCHECKBOX1'
+        Wx_IDValue = 1058
+        Wx_PaneCaption = 'WxCheckBox1'
+        Wx_PaneName = 'WxCheckBox1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object WxButtoncodif: TWxButton
+        Left = 504
+        Top = 20
+        Width = 75
+        Height = 25
+        Caption = 'CODIFICAR'
+        TabOrder = 4
+        EVT_BUTTON = 'WxButtoncodifClick0'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_Enabled = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_WXBUTTONCODIF'
+        Wx_IDValue = 1059
+        Wx_PaneCaption = 'WxButton1'
+        Wx_PaneName = 'WxButton1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+      object insertnumero: TWxEdit
+        Left = 119
+        Top = 34
+        Width = 71
+        Height = 19
+        BevelInner = bvNone
+        BevelOuter = bvNone
+        AutoSize = False
+        TabOrder = 5
+        EVT_TEXT = 'insertnumeroUpdated0'
+        Wx_BGColor = clBlack
+        Wx_Class = 'wxTextCtrl'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_EditStyle = []
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_INSERTNUMERO'
+        Wx_IDValue = 1060
+        Wx_MaxLength = 0
+        Wx_PaneCaption = 'WxEdit1'
+        Wx_PaneName = 'WxEdit1_Pane'
+        Wx_Aui_Dock_Direction = wxAUI_DOCK_NONE
+        Wx_Aui_Dockable_Direction = []
+        Wx_Aui_Pane_Style = []
+        Wx_Aui_Pane_Buttons = []
+        Wx_BestSize_Height = 0
+        Wx_BestSize_Width = 0
+        Wx_MinSize_Height = 0
+        Wx_MinSize_Width = 0
+        Wx_MaxSize_Height = 0
+        Wx_MaxSize_Width = 0
+        Wx_Floating_Height = 0
+        Wx_Floating_Width = 0
+        Wx_Floating_X_Pos = 0
+        Wx_Floating_Y_Pos = 0
+      end
+    end
+  end
+  object WxOpenFileDialog1: TWxOpenFileDialog
+    Left = 32
+    Top = 3
+    Width = 28
+    Height = 27
+    TabOrder = 2
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00B7A293006349
+      3500634935006349350063493500634935006349350063493500634935006349
+      3500634935006349350063493500634935006349350063493500B7A29300FEFD
+      FC00E1DCD800E0D7D200DFD2CA00DFCEC300DDC8BB00DCC3B300DBBFAD00DBBB
+      A700DBBBA700DBBBA700DBBBA700DBBBA700CFB4A30063493500B7A29300FEFE
+      FE0063493500634935006349350063493500634935006349350063493500FAED
+      E700F9EAE400F8E8E000F8E5DD00F6E2D800CFB4A30063493500B7A29300FFFF
+      FF00B3998A00F9F7F600F0EAE700E6DBD600DCCFC700D2C1B80063493500FAF0
+      EA00F9EDE700F9EBE300F8E7E000F7E6DC00CFB4A30063493500B7A29300FFFF
+      FF00B89F9100FFFFFF0000FF0000EFE8E500E4DAD400DACCC50063493500FBF3
+      EF00FBF0EB00F9EDE700F9EAE400F8E8E100CFB4A30063493500BAA59600FFFF
+      FF00BFA69900B9A09200B49A8B00AF968600AA918100A58B7A0063493500FCF5
+      F200FCF2EE00FBF0EB00FAEDE800F9EBE400D0B9AB0063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFEFD00FEFBFB00FEFAF800FDF8
+      F600FCF5F200FCF3EF00FBF0EC00F9EEE800D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FEFDFD00FEFCFB00FEFA
+      F800FDF8F600FCF5F200FCF3EF00FAF0EC00D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000FFFEFE000000
+      0000000000000000000000000000FCF3EF00D1C1B60063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00000000000000000000000000FFFFFF00FFFFFF00FEFE
+      FD00FEFCFC00FEFAF900FDF8F600FCF6F300D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF000000
+      0000000000000000000000000000FDF9F600D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFEFE00FEFDFC00FEFBF900FDF9F70063493500EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00E9A58400E99F7A00E7976E00E68E6200E5865600E37D
+      4A00E3764000E2723900E2723900E2723900E2723900C8622F00EAAA8B00FFC2
+      A200FFC2A200FEC09F00FDBD9A00FCB99600FBB59000FAB08B00F9AB8400F8A7
+      7D00F6A27700F59D7100F5996A00F3956500F3956500CD653100EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00EAAA8B00EAA68600E9A17F00E89B7600E7946C00E68E
+      6200E5875800E4814E00E47B4600E3763E00E3763E00E2723900}
+    Wx_Class = 'wxFileDialog'
+    Wx_Message = 'Choose a file'
+    Wx_Extensions = '*.*'
+    Wx_DialogStyle = []
+  end
+  object WxSaveFileDialog1: TWxSaveFileDialog
+    Left = 62
+    Top = 3
+    Width = 28
+    Height = 27
+    TabOrder = 3
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00B7A293006349
+      3500634935006349350063493500634935006349350063493500634935006349
+      3500634935006349350063493500634935006349350063493500B7A29300FEFD
+      FC00E1DCD800E0D7D200DFD2CA00DFCEC300DDC8BB00DCC3B300DBBFAD00DBBB
+      A700DBBBA700DBBBA700DBBBA700DBBBA700CFB4A30063493500B7A29300FEFE
+      FE0063493500634935006349350063493500634935006349350063493500FAED
+      E700F9EAE400F8E8E000F8E5DD00F6E2D800CFB4A30063493500B7A29300FFFF
+      FF00B3998A00F9F7F600F0EAE700E6DBD600DCCFC700D2C1B80063493500FAF0
+      EA00F9EDE700F9EBE300F8E7E000F7E6DC00CFB4A30063493500B7A29300FFFF
+      FF00B89F9100FFFFFF0000FF0000EFE8E500E4DAD400DACCC50063493500FBF3
+      EF00FBF0EB00F9EDE700F9EAE400F8E8E100CFB4A30063493500BAA59600FFFF
+      FF00BFA69900B9A09200B49A8B00AF968600AA918100A58B7A0063493500FCF5
+      F200FCF2EE00FBF0EB00FAEDE800F9EBE400D0B9AB0063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFEFD00FEFBFB00FEFAF800FDF8
+      F600FCF5F200FCF3EF00FBF0EC00F9EEE800D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00000000000000000000000000FEFDFD00FEFCFB00FEFA
+      F800FDF8F600FCF5F200FCF3EF00FAF0EC00D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000FFFEFE000000
+      0000000000000000000000000000FCF3EF00D1C1B60063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00FEFE
+      FD00FEFCFC00FEFAF900FDF8F600FCF6F300D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF000000
+      0000000000000000000000000000FDF9F600D1C1B60063493500C8B2A300FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFEFE00FEFDFC00FEFBF900FDF9F70063493500EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00E9A58400E99F7A00E7976E00E68E6200E5865600E37D
+      4A00E3764000E2723900E2723900E2723900E2723900C8622F00EAAA8B00FFC2
+      A200FFC2A200FEC09F00FDBD9A00FCB99600FBB59000FAB08B00F9AB8400F8A7
+      7D00F6A27700F59D7100F5996A00F3956500F3956500CD653100EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00EAAA8B00EAA68600E9A17F00E89B7600E7946C00E68E
+      6200E5875800E4814E00E47B4600E3763E00E3763E00E2723900}
+    Wx_Class = 'wxFileDialog'
+    Wx_Message = 'Choose a file'
+    Wx_Extensions = '*.*'
+    Wx_DialogStyle = []
+  end
+  object WxMenuBar1: TWxMenuBar
+    Left = 3
+    Top = 3
+    Width = 28
+    Height = 27
+    TabOrder = 1
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8
+      AC0099A8AC0099A8AC0099A8AC0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      00000000000000000000FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00EE826900EE826900EE826900EE826900EE826900EE826900EE82
+      6900EE826900EE826900EE82690099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00EE826900EE826900FFFFFF00FFFFFF00FFFFFF00EE826900EE82
+      6900EE826900EE826900EE82690099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00EE826900EE826900EE826900EE826900EE826900EE826900EE82
+      6900EE826900EE826900EE82690099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00000000000000000000000000000000000000
+      0000FFFFFF00FFFFFF00FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8
+      AC0099A8AC0099A8AC0099A8AC0099A8AC00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF0099A8AC00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF0000000000000000000000000000000000FFFFFF00FFFF
+      FF0099A8AC00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF0099A8AC00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8AC0099A8
+      AC0099A8AC00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+    Wx_Class = 'wxMenuBar'
+    Wx_MenuItems.IsSubMenu = False
+    Wx_MenuItems.Wx_Enabled = True
+    Wx_MenuItems.Wx_Hidden = False
+    Wx_MenuItems.Wx_IDValue = 0
+    Wx_MenuItems.Wx_MenuItemStyle = wxMnuItm_Normal
+    Wx_MenuItems.Wx_Checked = False
+    Wx_MenuItems.KeepFormat = False
+    Wx_MenuItems.Wx_FileHistory = False
+    Wx_MenuItems.WxCustomMenuItem = {
+      11000000545778437573746F6D4D656E754974656D5450463018547778437573
+      746F6D4D656E754974656D577261707065720011436172726965642E49735375
+      624D656E750812436172726965642E57785F456E61626C656409114361727269
+      65642E57785F48696464656E0811436172726965642E57785F49444E616D6506
+      09777849445F46494C4512436172726965642E57785F494456616C7565030E04
+      18436172726965642E57785F4D656E754974656D5374796C65070F77784D6E75
+      49746D5F4E6F726D616C12436172726965642E57785F43617074696F6E060741
+      72636869766F12436172726965642E57785F436865636B656408164361727269
+      65642E57585F4249544D41502E446174610A0C00000007544269746D61700000
+      000012436172726965642E4B656570466F726D61740816436172726965642E57
+      785F46696C65486973746F72790818436172726965642E5778437573746F6D4D
+      656E754974656D0A510A000011000000545778437573746F6D4D656E75497465
+      6D5450463018547778437573746F6D4D656E754974656D577261707065720011
+      436172726965642E49735375624D656E750810436172726965642E4556545F4D
+      656E75060B57786F70656E436C69636B12436172726965642E57785F456E6162
+      6C65640911436172726965642E57785F48696464656E0811436172726965642E
+      57785F49444E616D650609777849445F4F50454E12436172726965642E57785F
+      494456616C7565030F0418436172726965642E57785F4D656E754974656D5374
+      796C65070F77784D6E7549746D5F4E6F726D616C12436172726965642E57785F
+      43617074696F6E0605416272697212436172726965642E57785F436865636B65
+      640816436172726965642E57585F4249544D41502E446174610A0C0000000754
+      4269746D61700000000012436172726965642E4B656570466F726D6174081643
+      6172726965642E57785F46696C65486973746F72790818436172726965642E57
+      78437573746F6D4D656E754974656D0A0C03000011000000545778437573746F
+      6D4D656E754974656D5450463018547778437573746F6D4D656E754974656D57
+      7261707065720011436172726965642E49735375624D656E7508104361727269
+      65642E4556545F4D656E750617577866696C6544656369646966696361646F43
+      6C69636B12436172726965642E57785F456E61626C6564091143617272696564
+      2E57785F48696464656E0811436172726965642E57785F49444E616D65060A77
+      7849445F46494C453112436172726965642E57785F494456616C7565031C0418
+      436172726965642E57785F4D656E754974656D5374796C65070F77784D6E7549
+      746D5F4E6F726D616C12436172726965642E57785F43617074696F6E06144172
+      636869766F204465636F646966696361646F12436172726965642E57785F4368
+      65636B65640816436172726965642E57585F4249544D41502E446174610A0C00
+      000007544269746D61700000000012436172726965642E4B656570466F726D61
+      740816436172726965642E57785F46696C65486973746F727908000011000000
+      545778437573746F6D4D656E754974656D5450463018547778437573746F6D4D
+      656E754974656D577261707065720011436172726965642E49735375624D656E
+      750810436172726965642E4556545F4D656E750615577866696C65436F646966
+      696361646F436C69636B12436172726965642E57785F456E61626C6564091143
+      6172726965642E57785F48696464656E0811436172726965642E57785F49444E
+      616D65060A777849445F46494C453212436172726965642E57785F494456616C
+      7565031D0418436172726965642E57785F4D656E754974656D5374796C65070F
+      77784D6E7549746D5F4E6F726D616C12436172726965642E57785F4361707469
+      6F6E06124172636869766F20436F646966696361646F12436172726965642E57
+      785F436865636B65640816436172726965642E57585F4249544D41502E446174
+      610A0C00000007544269746D61700000000012436172726965642E4B65657046
+      6F726D61740816436172726965642E57785F46696C65486973746F7279080000
+      000011000000545778437573746F6D4D656E754974656D545046301854777843
+      7573746F6D4D656E754974656D577261707065720011436172726965642E4973
+      5375624D656E750810436172726965642E4556545F4D656E75060A57786E6577
+      436C69636B12436172726965642E57785F456E61626C65640911436172726965
+      642E57785F48696464656E0811436172726965642E57785F49444E616D650608
+      777849445F4E455712436172726965642E57785F494456616C75650317041843
+      6172726965642E57785F4D656E754974656D5374796C65070F77784D6E754974
+      6D5F4E6F726D616C12436172726965642E57785F43617074696F6E06054E7565
+      766F12436172726965642E57785F436865636B65640816436172726965642E57
+      585F4249544D41502E446174610A0C00000007544269746D6170000000001243
+      6172726965642E4B656570466F726D61740816436172726965642E57785F4669
+      6C65486973746F727908000011000000545778437573746F6D4D656E75497465
+      6D5450463018547778437573746F6D4D656E754974656D577261707065720011
+      436172726965642E49735375624D656E750810436172726965642E4556545F4D
+      656E75060B577873617665436C69636B12436172726965642E57785F456E6162
+      6C65640911436172726965642E57785F48696464656E0811436172726965642E
+      57785F49444E616D650609777849445F5341564512436172726965642E57785F
+      494456616C756503180418436172726965642E57785F4D656E754974656D5374
+      796C65070F77784D6E7549746D5F4E6F726D616C12436172726965642E57785F
+      43617074696F6E06074775617264617212436172726965642E57785F43686563
+      6B65640816436172726965642E57585F4249544D41502E446174610A0C000000
+      07544269746D61700000000012436172726965642E4B656570466F726D617408
+      16436172726965642E57785F46696C65486973746F7279080000110000005457
+      78437573746F6D4D656E754974656D5450463018547778437573746F6D4D656E
+      754974656D577261707065720011436172726965642E49735375624D656E7508
+      10436172726965642E4556545F4D656E75060D5778736176656173436C69636B
+      12436172726965642E57785F456E61626C65640911436172726965642E57785F
+      48696464656E0811436172726965642E57785F49444E616D65060B777849445F
+      53415645415312436172726965642E57785F494456616C756503190418436172
+      726965642E57785F4D656E754974656D5374796C65070F77784D6E7549746D5F
+      4E6F726D616C12436172726965642E57785F43617074696F6E060C4775617264
+      617220436F6D6F12436172726965642E57785F436865636B6564081643617272
+      6965642E57585F4249544D41502E446174610A0C00000007544269746D617000
+      00000012436172726965642E4B656570466F726D61740816436172726965642E
+      57785F46696C65486973746F727908000011000000545778437573746F6D4D65
+      6E754974656D5450463018547778437573746F6D4D656E754974656D57726170
+      7065720011436172726965642E49735375624D656E750810436172726965642E
+      4556545F4D656E75060B577865786974436C69636B12436172726965642E5778
+      5F456E61626C65640911436172726965642E57785F48696464656E0811436172
+      726965642E57785F49444E616D650609777849445F4558495412436172726965
+      642E57785F494456616C7565031B0418436172726965642E57785F4D656E7549
+      74656D5374796C65070F77784D6E7549746D5F4E6F726D616C12436172726965
+      642E57785F43617074696F6E060553616C697212436172726965642E57785F43
+      6865636B65640816436172726965642E57585F4249544D41502E446174610A0C
+      00000007544269746D61700000000012436172726965642E4B656570466F726D
+      61740816436172726965642E57785F46696C65486973746F72790800000000}
+    Wx_HasHistory = False
+  end
+  object WxMessageDialog1: TWxMessageDialog
+    Left = 95
+    Top = 4
+    Width = 28
+    Height = 27
+    TabOrder = 4
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000000000000000000000000000000000000FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00B7A293006349
+      3500634935006349350063493500634935006349350063493500634935006349
+      3500634935006349350063493500634935006349350063493500B7A29300FFFF
+      FF00E1DCD800E0D9D400DED6D000DDD3CC00DBD0C800DACDC400D9C9BF00D7C6
+      BB00D6C3B700D4C0B300D3BDAF00D1B9AA00CFB5A40063493500B7A29300FFFF
+      FF00FFFFFF00BEBEBD0035312F00090A0A00A1A0A000FBF8F700F5F0EC00A9A3
+      9F000C0B0B00000000002E2B2A00DDCABE00CFB6A70063493500B7A29300FFFF
+      FF00FFFFFF00FFFFFF009A9A98005F585500FFFFFF00FEFDFC00F9F5F300E0D8
+      D200322D2A000E0A0800C0BCB900E0CFC400D0B8A90063493500B7A29300FFFF
+      FF00FFFFFF00FFFFFF00F8F6F5006F696600595454008D888500878280005150
+      4F00000000007A767400E9DCD500E4D5CB00D0BAAB0063493500BAA59600FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF008B89880067636000B9B5B4009D9A99000A08
+      080025211F00CBC5C100EDE3DC00E7DAD200D0BBAD0063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00D8D3D000726A6400EBEBEB00B5B5B4000000
+      000071706F00F6F2EE00F0E7E100EBDFD800D0BDAF0063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FDFEFE00605C5900968F8C00312B28002928
+      2700C5C1BF00F8F4F200F3ECE800EEE5DF00D1BEB20063493500C8B2A300FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00CFCAC70048403B00000000005958
+      5700FFFFFF00FBF9F800F7F2EF00F2EAE500D1C0B40063493500BEA99A00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF006668690024242500C8C7
+      C700FFFFFF00FFFFFF00FAF7F500F5EFEC00D1C1B60063493500C3AE9E00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00C5C4C40079706C00FFFF
+      FF00FFFFFF00FFFFFF00FDFDFC00F9F5F300F4EDE90063493500EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00E9A58400E99F7A00E7976E00E68E6200E5865600E37D
+      4A00E3764000E2723900E2723900E2723900E2723900C8622F00EAAA8B00FFC2
+      A200FFC2A200FEC09F00FDBD9A00FCB99600FBB59000FAB08B00F9AB8400F8A7
+      7D00F6A27700F59D7100F5996A00F3956500F3956500CD653100EAAA8B00EAAA
+      8B00EAAA8B00EAAA8B00EAAA8B00EAA68600E9A17F00E89B7600E7946C00E68E
+      6200E5875800E4814E00E47B4600E3763E00E3763E00E2723900FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00
+      FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00}
+    Wx_Class = 'wxMessageDialog'
+    Wx_Message = 'Desea Reemplazarlo?'
+    Wx_Caption = 'El Archivo ya Existe!'
+    Wx_DialogStyle = [wxOK, wxCANCEL]
+  end
+end
